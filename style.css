@@ -33,16 +33,29 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow:
+    0 0 9px 0 rgba(0, 0, 0, 0.112),
+    0 0 72px 2px rgba(0, 0, 0, 0.23)
+    ;
+
+
 }
 
 .stopwatch-content {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50%;
-    width: 72%;
+    height: 68%;
+    width: 80%;
     position: relative;
     gap: 5%;
+    background: rgba(255, 255, 255, 0.02);
+    box-shadow: 0 8px 32px 0 rgba(255, 0, 0, 0.014);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 15px;
+    border: 5px solid rgba(39, 38, 38, 0.205);
+    outline: 5px solid rgba(39, 38, 38, 0.671);
 }
 
 .stopwatch-time {
