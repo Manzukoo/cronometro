@@ -6,8 +6,8 @@
 
 body {
     background: #201e1e;
-    color: #c34213;
     height: 100vh;
+    color: #c34213;
 }
 
 @font-face {
@@ -115,4 +115,6 @@ body {
 .time {
     font-size: 7.5em;
     font-family: digital;
+    position: relative;
+    text-shadow: 0 5px 0 #c342133f;
 }
