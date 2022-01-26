@@ -86,14 +86,26 @@ body {
     outline: 5px solid rgba(39, 38, 38, 0.671);
 }
 
+.times {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
 .stopwatch-time {
     display: flex;
     align-items: baseline;
+    justify-content: center;
     background: rgba(255, 0, 0, 0.068);
     backdrop-filter: blur( 9.5px );
     -webkit-backdrop-filter: blur( 9.5px );
     border-radius: 5px;
     padding: 10px;
+}
+
+.miliseconds {
+    max-width: 70px;
+    width: 100%;
 }
 
 #miliseconds {
