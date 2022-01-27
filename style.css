@@ -112,11 +112,11 @@ body {
 }
 
 #miliseconds {
-    font-size: 50px;
+    font-size: clamp(30px, 10vw, 50px);;
 }
 
 .time {
-    font-size: 7.5em;
+    font-size: clamp(3.5em, 10vw, 7.5em);
     font-family: digital;
     position: relative;
     text-shadow: 0 5px 0 #c342133f;
@@ -160,4 +160,19 @@ body {
 
 .switched_off:hover {
     background: #7a1919;
+}
+
+@media screen and (max-width: 540px) {
+    .stopwatch-container {
+        max-height: 70%;
+    }
+
+    .stopwatch-container {
+        height: 100%;
+    }
+    
+    .times {
+        grid-template-columns:none;
+        gap: 20px;
+    }
 }
